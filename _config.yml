@@ -28,7 +28,7 @@ twitter_username: sdram58
 github_username:  sdram58
 
 # Build settings
-theme: jekyll-architect-theme
+theme: jekyll-theme-architect
 plugins:
   - jekyll-feed
 
