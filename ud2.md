@@ -1,6 +1,6 @@
 ---
 layout: page
-title: UD2 Broadcast Recevier
+title: UD2 Broadcast Receiver
 permalink: /ud2/
 ---
 
@@ -47,20 +47,19 @@ Apps can receive broadcasts in two ways:
 To declare a broadcast receiver in the manifest, perform the following steps
 
 1. Specify the **&lt;receiver>** element in your app's manifest. **AndroidManifest.xml**
-   
 ```xml
 ....
-<receiver android:name=".MyBroadcastReceiver"  android:exported="true">
-    <intent-filter>
-        <action android:name="android.intent.action.BOOT_COMPLETED"/>
-        <action android:name="android.intent.action.INPUT_METHOD_CHANGED" />
-    </intent-filter>
-</receiver>
+.<receiver android:name=".MyBroadcastReceiver"  android:exported="true">
+    .<intent-filter>
+        .<action android:name="android.intent.action.BOOT_COMPLETED"/>
+        .<action android:name="android.intent.action.INPUT_METHOD_CHANGED" />
+    .</intent-filter>
+.</receiver>
 ....
 ```
 Intent filters specify the broadcast actions that your listener subscribes to.
 
-1. Create the **BroadcastReceiver** subclass, and then implement **onReceive(Context, Intent)**. The broadcast receiver in the following example logs and displays the content of the broadcast:
+2. Create the **BroadcastReceiver** subclass, and then implement **onReceive(Context, Intent)**. The broadcast receiver in the following example logs and displays the content of the broadcast:
 
 ```kotlin
 private const val TAG = "MyBroadcastReceiver"

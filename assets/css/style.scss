@@ -1,4 +1,65 @@
 ---
+# Only the main Sass file needs front matter (the dashes are enough)
 ---
 
-@import 'jekyll-theme-architect';
+@import
+  "minima/skins/{{ site.minima.skin | default: 'classic' }}",
+  "minima/initialize";
+
+
+  .about{
+    text-align: center;
+    font-size: 1.4em;
+    color:rgb(200,200,200)
+  }
+
+  .post-title{
+    background-color: rgb(135, 151, 240);
+    text-align: center;
+  }
+
+
+  main .wrapper{
+    background-color: rgba(146, 157, 219, 0.3);
+  }
+
+  .site-header{
+    background-color: black;
+    color:white;
+  }
+
+  a.site-title{
+    color:white !important;
+  }
+
+  .page-link{
+    color:white !important;
+  }
+
+  .page-link:hover{
+    color:rgb(245, 237, 168) !important
+
+  }
+
+  h1{
+    color: rgb(110, 248, 248);
+    background-color: rgb(22, 21, 21);
+    text-align: center;
+    border-color: rgb(126, 180, 241);
+    border-width: 2px;
+    border-radius: 3px;
+    box-shadow: 3px 3px;
+  }
+
+  h2{
+    color: rgb(159, 243, 191);
+    background-color: rgb(22, 21, 21);
+  }
+
+  main a{
+    color:black;
+    font-style: italic;
+    text-decoration: none;
+  }
+
+

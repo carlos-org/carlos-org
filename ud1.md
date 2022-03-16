@@ -5,14 +5,13 @@ permalink: /ud1/
 ---
 
 
-
 Why Kotlin? {#why}
 ===================
 
 
 Kotlin is a modern programming language than make developers happier…
 
-![Kotlin's uses](./images/Imagen1.png)  
+![Kotlin's uses](../assets/images/Imagen1.png)  
   
 [https://kotlinlang.org/](https://kotlinlang.org/)
 
@@ -23,11 +22,11 @@ ____________________________
 
 As in Java, in Kotlin the packages are placed at the top of the file:
 ```kotlin
-package com.example
+    package com.example
+    
+    import com.example.*
 
-import com.example.*
-
-//...
+    //...
 ```
 
   
@@ -70,11 +69,13 @@ These keywords allow you to be explicit about what can be changed. Use them to y
 ## Type Inference
 
 
+\Begin{multicols}{2}
 Continuing the previous example, when you assign an initial value to **languageName**, the Kotlin compiler can infer the type based on the type of the assigned value.  
 
 Since the value of "Kotlin" is of type String, the compiler infers that **languageName** is also a String. Note that Kotlin is a statically-typed language. This means that the type is resolved at compile time and never changes.  
 In the following example, **languageName** is inferred as a String, so you can't call any functions that aren't part of the String class:
 
+\End{multicols}
 
 
 ```kotlin 
@@ -614,7 +615,7 @@ fun main() {
 ```
         
 
-![Return result](./images/ud2-2021-09-14-11-59-27.png){width=5cm,center}
+![Return result](../assets/images/ud2-2021-09-14-11-59-27.png){width=5cm,center}
 
 ::: note
 Repeat Hello World 5 times
